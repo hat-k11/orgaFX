@@ -22,9 +22,9 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button fx:id="buttonNonStop" mnemonicParsing="false" onAction="#onClickNonStop" prefHeight="124.0" prefWidth="262.0" text="止まらない" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <Button fx:id="buttonDontStop" mnemonicParsing="false" onAction="#onClickDontStop" prefHeight="124.0" prefWidth="262.0" text="止まるんじゃねぇぞ…" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <font>
-                        <Font size="36.0" />
+                        <Font size="24.0" />
                      </font></Button>
                   <Button fx:id="buttonEisho" mnemonicParsing="false" onAction="#onClickEisho" prefHeight="126.0" prefWidth="240.0" text="詠唱する" GridPane.columnIndex="1">
                      <font>
@@ -34,6 +34,11 @@
                   <Button fx:id="buttonNonRelation" mnemonicParsing="false" onAction="#onClickNonRelation" prefHeight="119.0" prefWidth="240.0" text="関係ない" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <font>
                         <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonNonStop" mnemonicParsing="false" onAction="#onClickNonStop" prefHeight="123.0" prefWidth="240.0" text="止まらねぇからよ…" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="24.0" />
                      </font>
                   </Button>
                </children>

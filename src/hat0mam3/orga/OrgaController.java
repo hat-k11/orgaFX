@@ -11,6 +11,8 @@ import javafx.scene.media.AudioClip;
 
 public class OrgaController {
 	@FXML
+	private Button buttonDontStop;
+	@FXML
 	private Button buttonNonStop;
 	@FXML
 	private Button buttonEisho;
@@ -18,8 +20,14 @@ public class OrgaController {
 	private Button buttonNonRelation;
 	
 	@FXML
-	public void onClickNonStop(ActionEvent aEvent){
+	public void onClickDontStop(ActionEvent aEvent) {
 		AudioClip aClip = new AudioClip(new File("./orga.wav").toURI().toString());
+		aClip.play();
+	}
+	
+	@FXML
+	public void onClickNonStop(ActionEvent aEvent){
+		AudioClip aClip = new AudioClip(new File("./nonstop.wav").toURI().toString());
 		aClip.play();
 	}
 	
