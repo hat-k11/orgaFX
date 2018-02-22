@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.BorderPane?>
 
-
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="hat0mam3.orga.OrgaController">
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hat0mam3.orga.OrgaController">
    <center>
       <AnchorPane prefHeight="480.0" prefWidth="720.0" BorderPane.alignment="CENTER">
          <children>
@@ -22,7 +22,20 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button fx:id="button" mnemonicParsing="false" onAction="#onClick" prefHeight="148.0" prefWidth="238.0" text="止まらない" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button fx:id="buttonNonStop" mnemonicParsing="false" onAction="#onClickNonStop" prefHeight="124.0" prefWidth="262.0" text="止まらない" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="36.0" />
+                     </font></Button>
+                  <Button fx:id="buttonEisho" mnemonicParsing="false" onAction="#onClickEisho" prefHeight="126.0" prefWidth="240.0" text="詠唱する" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonNonRelation" mnemonicParsing="false" onAction="#onClickNonRelation" prefHeight="119.0" prefWidth="240.0" text="関係ない" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Button>
                </children>
             </GridPane>
          </children>
