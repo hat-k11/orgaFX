@@ -1,9 +1,6 @@
 package hat0mam3.orga;
 
 import java.io.File;
-
-import org.ietf.jgss.Oid;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
