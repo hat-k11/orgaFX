@@ -43,6 +43,7 @@ public class OrgaController {
 	@FXML
 	public void onClickNonRelation(ActionEvent aEvent){
 		AudioClip aClip = new AudioClip(new File("./ride.wav").toURI().toString());
+		aClip.stop();
 		aClip.play();
 	}
 }
