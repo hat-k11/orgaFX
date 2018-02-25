@@ -21,29 +21,26 @@ public class OrgaController {
 	
 	@FXML
 	public void onClickDontStop(ActionEvent aEvent) {
-		AudioClip aClip = new AudioClip(new File("./orga.wav").toURI().toString());
-		aClip.stop();
-		aClip.play();
+		playMusic("./orga.wav");
 	}
 	
 	@FXML
 	public void onClickNonStop(ActionEvent aEvent){
-		AudioClip aClip = new AudioClip(new File("./nonstop.wav").toURI().toString());
-		aClip.stop();
-		aClip.play();
+		playMusic("./nonstop.wav");
 	}
 	
 	@FXML
 	public void onClickEisho(ActionEvent aEvent){
-		AudioClip aClip = new AudioClip(new File("./eisho.wav").toURI().toString());
-		aClip.stop();
-		aClip.play();
+		playMusic("./eisho.wav");
 	}
 	
 	@FXML
 	public void onClickNonRelation(ActionEvent aEvent){
-		AudioClip aClip = new AudioClip(new File("./ride.wav").toURI().toString());
-		aClip.stop();
-		aClip.play();
+		playMusic("./ride.wav");
+	}
+	
+	public void playMusic(String fileName){
+		AudioClip audioClip = new AudioClip(new File(fileName).toURI().toString());
+		audioClip.play();
 	}
 }
