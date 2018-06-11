@@ -1,9 +1,6 @@
 package hat0mam3.orga;
 
 import java.io.File;
-
-import javax.security.auth.login.FailedLoginException;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -18,6 +15,10 @@ public class OrgaController {
 	private Button buttonEisho;
 	@FXML
 	private Button buttonNonRelation;
+	@FXML
+	private Button buttonStop;
+	
+	private AudioClip audioClip;
 
 	@FXML
 	public void onClickDontStop(ActionEvent aEvent) {
@@ -38,10 +39,21 @@ public class OrgaController {
 	public void onClickNonRelation(ActionEvent aEvent){
 		playMusic("./ride.wav");
 	}
-
-	public void playMusic(String fileName){
-		AudioClip audioClip = new AudioClip(new File(fileName).toURI().toString());
-		audioClip.play();
+	
+	@FXML
+	public void onClickStop(ActionEvent aEvent){
+		if(audioClip.isPlaying()){
+			audioClip.stop();
+		}
 	}
 
+	public void playMusic(String fileName){
+//		AudioClip audioClip = new AudioClip(new File(fileName).toURI().toString());
+//		audioClip.play();
+		
+		audioClip = new AudioClip(new File(fileName).toURI().toString());
+		audioClip.play();
+	}
+	
+	
 }

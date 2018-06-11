@@ -41,6 +41,7 @@
                         <Font size="24.0" />
                      </font>
                   </Button>
+                  <Button fx:id="buttonStop" mnemonicParsing="false" onAction="#onClickStop" prefHeight="120.0" prefWidth="240.0" text="止まる" GridPane.columnIndex="2" GridPane.rowIndex="2" />
                </children>
             </GridPane>
          </children>
