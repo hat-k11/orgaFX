@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
@@ -36,12 +37,17 @@
                         <Font size="36.0" />
                      </font>
                   </Button>
-                  <Button fx:id="buttonNonStop" mnemonicParsing="false" onAction="#onClickNonStop" prefHeight="123.0" prefWidth="240.0" text="止まらねぇからよ…" GridPane.rowIndex="1">
+                  <Button fx:id="buttonNonStop" mnemonicParsing="false" onAction="#onClickNonStop" prefHeight="123.0" prefWidth="240.0" text="止まらねぇからよ…" GridPane.columnIndex="2" GridPane.rowIndex="1">
                      <font>
                         <Font size="24.0" />
                      </font>
                   </Button>
                   <Button fx:id="buttonStop" mnemonicParsing="false" onAction="#onClickStop" prefHeight="120.0" prefWidth="240.0" text="止まる" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <ImageView fx:id="orgaPic" fitHeight="476.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../../../orga.png" />
+                     </image>
+                  </ImageView>
                </children>
             </GridPane>
          </children>

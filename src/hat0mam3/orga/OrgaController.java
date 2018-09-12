@@ -4,6 +4,7 @@ import java.io.File;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.media.AudioClip;
 
@@ -18,6 +19,8 @@ public class OrgaController {
 	private Button buttonNonRelation;
 	@FXML
 	private Button buttonStop;
+	@FXML
+	private ImageView orgaPic;
 	
 	private AudioClip audioClip;
 
@@ -49,14 +52,8 @@ public class OrgaController {
 	}
 
 	public void playMusic(String fileName){
-//		AudioClip audioClip = new AudioClip(new File(fileName).toURI().toString());
-//		audioClip.play();
-		
 		audioClip = new AudioClip(new File(fileName).toURI().toString());
 		audioClip.play();
 	}
 	
-	public static void hogefuga(KeyEvent e){
-		System.out.println(e.getCode());
-	}
 }
