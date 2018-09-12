@@ -14,6 +14,7 @@ public class Main extends Application {
 			BorderPane root = (BorderPane)FXMLLoader.load(getClass().getResource("Orga.fxml"));
 			Scene scene = new Scene(root,720,480);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			scene.setOnKeyPressed(e -> OrgaController.hogefuga(e));
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("é~Ç‹ÇÈÇÒÇ∂Ç·ÇÀÇ•ÇºÅcÅc");
 			primaryStage.show();

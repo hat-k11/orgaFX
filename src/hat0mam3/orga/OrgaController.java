@@ -4,6 +4,7 @@ import java.io.File;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.media.AudioClip;
 
 public class OrgaController {
@@ -55,5 +56,7 @@ public class OrgaController {
 		audioClip.play();
 	}
 	
-	
+	public static void hogefuga(KeyEvent e){
+		System.out.println(e.getCode());
+	}
 }
